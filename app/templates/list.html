@@ -1,0 +1,19 @@
+<div ng-if="vm.photos" ng-repeat="photo in vm.photos" class="col-md-3 col-sm-6 col-xs-12">
+    <div class="thumbnail linkable" ng-click="vm.getPhotoDetails(photo)">
+        <img class="img" ng-src="{{photo.urls.thumb}}">
+        <div class="caption">
+            <p class="text-center">posted by: {{photo.user.name}}</p>
+            <p class="text-center">{{vm.formatDate(photo.created_at)}}</p>
+            <p class="text-center">
+                {{photo.likes}}
+                <span class="glyphicon glyphicon-thumbs-up"></span>
+            </p>
+        </div>
+    </div>
+</div>
+<div class="pagination-container">
+<ul uib-pagination 
+    total-items="vm.totalItems" 
+    ng-model="vm.currentPage" 
+    ng-change="vm.changePage()"></ul>
+    </div>

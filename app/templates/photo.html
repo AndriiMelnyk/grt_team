@@ -1,0 +1,19 @@
+<div class="thumbnail">
+    <img ng-src="{{vm.photo.urls.regular}}">
+    <table class="table">
+        <tbody>
+            <tr ng-if="vm.photo.user.location">
+                <th>User location</th>
+                <td>{{vm.photo.user.location}}</td>
+            </tr>
+            <tr>
+                <th>User Name</th>
+                <td>{{vm.photo.user.name}}</td>
+            </tr>
+            <tr>
+                <th>Download link</th>
+                <td><a ng-href="{{vm.photo.links.download}}" target="_blank">Download</a></td>
+            </tr>
+        </tbody>
+    </table>
+</div>

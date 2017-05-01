@@ -1,0 +1,31 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>GRT team test task</title>
+    <base href="/"/>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body ng-app="app">
+    <div class="container top-buffer">
+        <div class="row">
+            <ui-view></ui-view>
+        </div>
+    </div>
+
+    <script src="./node_modules/moment/min/moment.min.js"></script>
+    <script src="./node_modules/angular/angular.js"></script>
+    <script src="./node_modules/angular-ui-bootstrap/dist/ui-bootstrap.js"></script>
+    <script src="./node_modules/angular-ui-bootstrap/dist/ui-bootstrap-tpls.js"></script>
+    <script src="./node_modules/angular-ui-router/release/angular-ui-router.min.js"></script>
+    
+    <script src="./app/app.js"></script>
+    <script src="./app/app.config.js"></script>
+    <script src="./app/controllers/index.controller.js"></script>
+    <script src="./app/controllers/photo.controller.js"></script>
+    <script src="./app/factories/app.factory.js"></script>
+</body>
+</html>

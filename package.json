@@ -1,0 +1,20 @@
+{
+  "name": "grt",
+  "version": "1.0.0",
+  "description": "test task",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm install && node server.js"
+  },
+  "author": "Andrew Melnyk",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.6.4",
+    "angular-ui-bootstrap": "^2.5.0",
+    "angular-ui-router": "^0.4.2",
+    "bootstrap": "^3.3.7",
+    "express": "^4.15.2",
+    "moment": "^2.18.1",
+    "path": "^0.12.7"
+  }
+}

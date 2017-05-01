@@ -1,0 +1,16 @@
+.linkable {
+    cursor: pointer;
+}
+
+.pagination-container {
+	clear: both;
+}
+
+.top-buffer {
+	margin-top: 20px;
+}
+
+.thumbnail > img {
+	width: 200px;
+	height: 200px;
+}
